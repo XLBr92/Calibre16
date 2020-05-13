@@ -1,12 +1,9 @@
 /* soft reset do CSS */
-
 *{
   margin:0;
   padding:0; 
   box-sizing: border-box;
 }
-
-
 
 body { 
     background-image: url('https://free-pptbackgrounds.com/wp-content/uploads/2019/04/max-complexity-blue-black-pptbackgrounds.jpg');
@@ -18,19 +15,19 @@ body {
   /* se a tela tiver pelo menos 400 pixels vai carregar esses estilos                     */
 
   @media (min-width: 400px ) {
-    body{
+   body{
       font-size: 14px;
     }
   }
   /*Break-Point*/
   @media (min-width: 600px ) {
-    body{
+  body{
       font-size: 18px;
     }
   }
 
   header {
-    height: 50vh;
+    height: 100vh;
     display: flex;
     justify-content:center;
     align-items: center;
@@ -72,11 +69,11 @@ body {
     color: whitesmoke;
     font-family: fantasy;
     text-align: center;
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff1100, 0 0 70px #0044ff, 0 0 80px #ff1100, 0 0 100px #0026ff, 0 0 150px #ff1100;
+    text-shadow: 0 0 10px rgb(0, 0, 0), 0 0 20px rgb(0, 0, 0), 0 0 30px rgb(0, 0, 0), 0 0 40px #ff1100, 0 0 70px #0044ff, 0 0 80px #ff1100, 0 0 100px #0026ff, 0 0 150px #ff1100;
     }
 
     .site-title{
-      font-size: 4em;
+      font-size: 8em;
     }
 
   .site-subtitle {
@@ -88,4 +85,28 @@ body {
   }
 
 
+.svg {
+    width: 4em;
+    height: 4em;
+    fill: transparent;  /* #80bbf2 */
+    stroke: #29f ;
+    stroke-width: 1px;
+    stroke-dasharray: 200; 
+    stroke-dashoffset: 0; 
+    
+  
+		animation: 10s desenha infinite alternate;	
+}
+
+
+@keyframes desenha {
+  to {
+		/* Inicio: Ponto inicial */
+    stroke-dashoffset: var(--tamanhoTotalDoPath); 
+  }
+  from {
+		/* Fim: Altera o início para 0 */
+    stroke-dashoffset: 0;
+  }
+}
  
