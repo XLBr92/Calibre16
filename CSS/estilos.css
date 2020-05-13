@@ -33,9 +33,9 @@ body {
     align-items: center;
   }
 
-  .img-portfolio {
-    width: 180px;
-    height: 180px;
+.img-portfolio {
+    width: 10px;
+    height: 10px;
 }
 
   .menu { 
@@ -83,20 +83,19 @@ body {
     font-style: italic;
     text-shadow: darkslategray
   }
-
-
-.svg {
-    width: 4em;
-    height: 4em;
+  
+.img-portfolio{width: 22%;
+    height: 8%;
     fill: transparent;  /* #80bbf2 */
     stroke: #29f ;
     stroke-width: 1px;
     stroke-dasharray: 200; 
     stroke-dashoffset: 0; 
-    
   
 		animation: 10s desenha infinite alternate;	
 }
+
+
 
 
 @keyframes desenha {
@@ -108,5 +107,45 @@ body {
 		/* Fim: Altera o início para 0 */
     stroke-dashoffset: 0;
   }
-}
- 
+
+  }
+
+  #audioplayer{
+    width: 480px;
+    height: 60px;
+    margin: 50px auto auto auto;
+    border: solid;
+  }
+  
+  #pButton{
+      height:60px; 
+      width: 60px;
+      border:absolute ;
+      background-size: 50% 50%;
+      background-repeat: no-repeat;
+      background-position: center;
+      float:left;
+      outline:none;
+  }
+  
+  .play{background: url('http://www.alexkatz.me/codepen/img/play.png') ;}
+  .pause{background: url('http://www.alexkatz.me/codepen/img/pause.png') ;}
+  
+  #timeline{
+    width: 400px;
+    height: 20px;
+    margin-top: 20px;
+    float: left;
+    border-radius: 15px;
+    background: rgba(0,0,0,.6);
+    
+  }
+  #playhead{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-top: 1px;
+    background: rgba(1,20,60,20);
+  
+  }
+  
