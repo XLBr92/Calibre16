@@ -6,11 +6,11 @@
 }
 
 body { 
-    background-image: url('https://free-pptbackgrounds.com/wp-content/uploads/2019/04/max-complexity-blue-black-pptbackgrounds.jpg');
-    background-size:auto 130vh;
-        font-family: cursive;
-    height:130vh;
+  background-image: url('https://free-pptbackgrounds.com/wp-content/uploads/2019/04/max-complexity-blue-black-pptbackgrounds.jpg');
+    background-size:auto 270vh;
+    height:100vh;
     font-size: 10px;
+    font-family: 'Comic Neue', cursive;
   }
   /* se a tela tiver pelo menos 400 pixels vai carregar esses estilos                     */
 
@@ -26,17 +26,15 @@ body {
     }
   }
 
+
   header {
     height: 100vh;
     display: flex;
     justify-content:center;
     align-items: center;
+    
   }
 
-.img-portfolio {
-    width: 10px;
-    height: 10px;
-}
 
   .menu { 
     Background-color: #68f;
@@ -46,9 +44,10 @@ body {
   }
 
   .menu a {
-    color: rgb(219, 16, 16);
+    color: 0 0 10px rgb(0, 0, 0), 0 0 20px rgb(0, 0, 0), 0 0 30px rgb(0, 0, 0), 0 0 40px #ff1100, 0 0 70px #0044ff, 0 0 80px #ff1100, 0 0 100px #0026ff, 0 0 150px #ff1100;
     display: block;
     padding: 10px 20px;
+    
 
   }
   .menu li {
@@ -67,85 +66,128 @@ body {
   }
   .site-title {
     color: whitesmoke;
-    font-family: fantasy;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 8em;
     text-align: center;
     text-shadow: 0 0 10px rgb(0, 0, 0), 0 0 20px rgb(0, 0, 0), 0 0 30px rgb(0, 0, 0), 0 0 40px #ff1100, 0 0 70px #0044ff, 0 0 80px #ff1100, 0 0 100px #0026ff, 0 0 150px #ff1100;
     }
 
-    .site-title{
-      font-size: 8em;
-    }
 
   .site-subtitle {
     color: silver; 
-    font-family:'Helvetica';
+    font-family: 'VT323', monospace;
     text-align: center;
     font-style: italic;
-    text-shadow: darkslategray
+    text-shadow: darkslategray;
+    text-transform: uppercase;
+    font-size: 50px;
+    font-weight: 120;
+    letter-spacing: 0.05em;
   }
+
+  figcaption
+  {
+   display: flex;
+   justify-content: space-around;
+   color: darkgray;
+   font-size: 1.3em;
+   font-family:'Permanent Marker', cursive; ;
+   text-shadow: 0 0 10px rgb(0, 0, 0), 0 0 20px rgb(0, 0, 0), 0 0 30px rgb(240, 235, 235), 0 0 40px ;
+  }
+
+  .portfolio{
+    padding: 2em;
+    height: 100vh;
+  }
+
+  .portfolio .grid{
+    display:grid;
+    gap: 2em; 
+    padding-top: 5em; 
+   
+  }
+
+  @media(min-width: 560px) {
+    .portfolio .grid {
+    
+   grid-template-columns: repeat(2, 240px);
+   justify-content:center;
   
-.img-portfolio{width: 22%;
-    height: 8%;
-    fill: transparent;  /* #80bbf2 */
-    stroke: #29f ;
-    stroke-width: 1px;
-    stroke-dasharray: 200; 
-    stroke-dashoffset: 0; 
-  
-		animation: 10s desenha infinite alternate;	
-}
-
-
-
-
-@keyframes desenha {
-  to {
-		/* Inicio: Ponto inicial */
-    stroke-dashoffset: var(--tamanhoTotalDoPath); 
-  }
-  from {
-		/* Fim: Altera o início para 0 */
-    stroke-dashoffset: 0;
+  } 
+  #player {
+    width: auto;
+    height: 10em;
+    padding-top: 15em;
   }
 
   }
 
-  #audioplayer{
-    width: 480px;
-    height: 60px;
-    margin: 50px auto auto auto;
-    border: solid;
+  @media(min-width: 880px) {
+    .portfolio .grid {
+   display: flex;
+   align-content: center;
+   justify-content:space-around;
+   padding-top: 10em;
+   height: calc(100vh - 2em - 48px - 1.5em) ;
   }
-  
-  #pButton{
-      height:60px; 
-      width: 60px;
-      border:absolute ;
-      background-size: 50% 50%;
-      background-repeat: no-repeat;
-      background-position: center;
-      float:left;
-      outline:none;
+  #player {
+    width: auto;
+    height: 10em;
+    padding-top: 0em;
   }
-  
-  .play{background: url('http://www.alexkatz.me/codepen/img/play.png') ;}
-  .pause{background: url('http://www.alexkatz.me/codepen/img/pause.png') ;}
-  
-  #timeline{
-    width: 400px;
-    height: 20px;
-    margin-top: 20px;
-    float: left;
-    border-radius: 15px;
-    background: rgba(0,0,0,.6);
+
+   } 
+
+  .portfolio figure{
+    text-align: center;
     
   }
-  #playhead{
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    margin-top: 1px;
-    background: rgba(1,20,60,20);
-  
+  .portfolio h2{
+    font-size: 3em;
+    font-family: 'Architects Daughter', cursive;
+    color: whitesmoke;
+    text-shadow: 0 0 10px rgb(0, 0, 0), 0 0 20px rgb(0, 0, 0), 0 0 30px rgb(0, 0, 0), 0 0 40px ;
+    margin-top: 2em;
+    align-content: flex;
+    text-align: center;
+    
+    
   }
+
+.img-portfolio{
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10%;
+  }
+
+    
+  @media(min-width: 1000px) {
+    .img-portfolio {
+      width: auto;
+      height: 10em;
+      padding: 0px;
+    }
+    #player {
+      width: auto;
+      height: 10em;
+      padding-top: 5em;
+    }
+
+   } 
+
+/* Audioo */
+
+
+ #player{ text-align: center; }
   
+ div#player > div > audio{  
+  width:500px; 
+  background:#000; 
+  float:none;
+  
+}
+
+ audio::-webkit-media-controls-timeline { display:inline-flex;}
+audio::-webkit-media-controls-panel {background-color:rgb(90, 122, 173);}

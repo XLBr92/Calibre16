@@ -5,7 +5,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Calibre16</title>
+ 
   <link rel="stylesheet" href="CSS/estilos.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Comic+Neue&family=Permanent+Marker&family=VT323&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
@@ -13,27 +17,31 @@
     <nav class="menu">
       <ul>
         <li><a href="#">Sobre</a></li>
-        <li><a href="#">Portfólio</a></li>
+        <li><a href="#">Projetos</a></li>
         <li><a href="#">Contato</a></li>
       </ul>
     </nav>
     <div>
       <h1 class="site-title">Calibre 16</h1>
-    <h2 class="site-subtitle">Produções Audio Visuais
+    <h2 class="site-subtitle">Produções Audiovisuais
     </h2>
 
  </div>
     
 </header>
   
- <section>
-  <h2>Portfólio</h2>
+
+ <section class="portfolio">
+  <h2>Projetos</h2>
+  <div class="grid">
     <figure>
-      <img class="img-portfolio" src="./img/57546.svg"eCommerce">
-      <figcaption>eCommerce</figcaption>
-   </figure>
+      <a href="https://www.youtube.com/channel/UCieOhA24baNVBGfCC0AEbUw?">
+      <img class="img-portfolio" src="img/man.svg"; alt="Youtube">
+      <figcaption>Youtube</figcaption>
+    </figure>
+  </a>
    <figure>
-      <img class="img-portfolio" src="./img/2916447.svg" alt=">Mobile">
+      <img class="img-portfolio" src="./img/2916447.svg" alt="Mobile">
       <figcaption>Mobile</figcaption>
     </figure>
     <figure>
@@ -44,21 +52,17 @@
       <img class="img-portfolio" src="./img/cabeça chip.svg" alt="Projetos pessoais">
       <figcaption>Projetos pessoais</figcaption>
     </figure>
-   
- </section>
-
- <audio id="music" preload="true">
-  <source src="mp3/schizo master.mp3">
-	</audio>
-<div id="audioplayer">
-	<button id="pButton" class="play"></button>
-  <div id="timeline">    
-  		  <div id="playhead"></div>
   </div>
-</div>
 
+<!--                Audiooooooo                 -->
 
-
-
-
+  <div id="player">
+    <audio src="mp3/som do universo.mp3" autoplay controls class="player">
+        Seu browser não tem suporte a tag audio  
+      
+  </audio>
+  </div>
   
+ </section>
+ 
+
